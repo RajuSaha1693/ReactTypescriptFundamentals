@@ -1,9 +1,4 @@
-type NormalProps={
-    message:string
-    name:string
-    age:number
-    isLogged:boolean
-}
+import { NormalProps } from "./NormalType.types"
 export const NormalType = (props:NormalProps) => {
   return (
     <>

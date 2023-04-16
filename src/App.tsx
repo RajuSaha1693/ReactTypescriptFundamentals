@@ -10,6 +10,7 @@ import { OptionalType } from './components/OptionalType';
 import { DestructureType } from './components/DestructureType';
 import { EventType } from './components/EventType';
 import { InputType } from './components/InputType';
+import { Container } from './others/Container';
 function App() {
   const [message,setMessage]=useState('Good Morning')
   const person={
@@ -40,6 +41,7 @@ function App() {
       <DestructureType name='Saha'/>
       <EventType handleClick={(event,id)=>{console.log('buton Click',event,id)}}/>
       <InputType value='' handleChange={(event)=>console.log(event?.target.value)}/>
+      <Container styles={{border:'1px solid grey',padding:'1rem'}}/>
     </div>
   );
 }

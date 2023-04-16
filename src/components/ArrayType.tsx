@@ -1,8 +1,6 @@
+import {Name} from './NormalType.types'
 type ListProps={
-    personList:{
-        first:string
-        last:string
-    }[]
+    personList:Name[]
 }
 export const ArrayType = (props:ListProps) => {
   return (
