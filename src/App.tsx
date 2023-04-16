@@ -8,6 +8,8 @@ import { Header } from './components/childTypes/Header';
 import { TwoHeader } from './components/childTypes/TwoHeader';
 import { OptionalType } from './components/OptionalType';
 import { DestructureType } from './components/DestructureType';
+import { EventType } from './components/EventType';
+import { InputType } from './components/InputType';
 function App() {
   const [message,setMessage]=useState('Good Morning')
   const person={
@@ -36,6 +38,8 @@ function App() {
       </TwoHeader>
       <OptionalType name='Raju'/>
       <DestructureType name='Saha'/>
+      <EventType handleClick={(event,id)=>{console.log('buton Click',event,id)}}/>
+      <InputType value='' handleChange={(event)=>console.log(event?.target.value)}/>
     </div>
   );
 }
